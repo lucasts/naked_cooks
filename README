@@ -5,12 +5,12 @@ What?
 -----
 A social network where amateur cooks can share their recipes with friends and other people.
 
-Como?
+How?
 ------
 Each user can add recipes with pictures and a step-by-step of how to cook it. The recipe have a visibility that will be chosen (public, only friends, nobody). The users can favorite recipes, rating (one to 5 "pans").
 Beside that, users can add friends, get updates (receitas) of each friend. 
 
-Requisitos?
+Requirements?
 ------------
 * User can update the profile and password
 * User can add another user as a friend (aproval needed)
@@ -21,3 +21,12 @@ Requisitos?
 * User can add pictures to a recipe
 * User can comment a recipe
 * User can send a message (global or to a specific friend)
+
+Models:
+-------
+* -User-
+* -Friendship-
+* -Profile-
+* -Recipe-
+* -Category-
+* -Message-
