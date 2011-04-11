@@ -1,11 +1,23 @@
-Rede social de cozinheiros-wannabies
-=====================================
+A social network to amateur cooks
+=================================
 
-O que?
--------
-Uma rede social onde cozinheiros amadores compartilham suas receitas com amigos e com outras pessoas.
+What?
+-----
+A social network where amateur cooks can share their recipes with friends and other people.
 
 Como?
 ------
-Cada usuário poderá cadastrar receitas com fotos e passo a passo de como fazê-la. A receita terá uma visibilidade a ser escolhida (pública, somente amigos, ninguém). Os usuários poderão adicionar receitas como favoritas, dar pontuação para uma receita (1 a 5 "panelas").
-Além disso, os usuários poderão se adicionar como amigos, recebendo as atualizações (receitas) feitas por cada usuário.
+Each user can add recipes with pictures and a step-by-step of how to cook it. The recipe have a visibility that will be chosen (public, only friends, nobody). The users can favorite recipes, rating (one to 5 "pans").
+Beside that, users can add friends, get updates (receitas) of each friend. 
+
+Requisitos?
+------------
+* User can update the profile and password
+* User can add another user as a friend (aproval needed)
+* User must aproval friend requests
+* User can favorite recipe
+* User can rate a recipe
+* User can add recipe
+* User can add pictures to a recipe
+* User can comment a recipe
+* User can send a message (global or to a specific friend)
