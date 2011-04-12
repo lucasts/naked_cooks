@@ -4,8 +4,7 @@ class Category < ActiveRecord::Base
     category.permalink = category.name.parameterize
   end
   
-  validates_presence_of   :name
-  validates_uniqueness_of :name
+  validates :name, :presence => true, :uniqueness => true, :length => { :minimum => 4 }
   
   has_many :recipes
 end

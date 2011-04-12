@@ -13,9 +13,38 @@ class UserTest < ActiveSupport::TestCase
   end
   
   test "should not accept equal user" do
-    user1 = User.create(email:'hboaventura@gmail.com', password:'donald')
-    user2 = User.create(email:'hboaventura@gmail.com', password:'donald')
+    user1 = create(email:'hboaventura@gmail.com', password:'donald')
+    user1.save
+    
+    user2 = create(email:'hboaventura@gmail.com', password:'donald')
     assert !user2.save, "User with same e-mail shound't be created"
+  end
+  
+  test "should not accept invalid email" do
+    user = create(:email => 'teste')
+    
+    assert user.errors[:email].any?, "invalid :email shouldn't be accepted"    
+  end
+  
+  test "should not accept empty password" do
+    user = create(:password => nil)
+    
+    assert user.errors[:password].any?, "nil :password shouldn't be accepted"    
+  end
+  
+  test "should not accept short password" do
+    user = create(:password => "abcde")
+    
+    assert user.errors[:password].any?, "short :password shouldn't be accepted"    
+  end
+  
+  private
+  
+  def create(options={})
+    User.create({
+      :email    => "email@test.com",
+      :password => "password",
+    }.merge(options))
   end
   
 end

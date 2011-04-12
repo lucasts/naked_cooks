@@ -4,8 +4,9 @@ class Recipe < ActiveRecord::Base
     recipe.permalink = recipe.name.parameterize
   end
   
-  validates_presence_of :name, :description, :user
-  validates_length_of :name, :within => 3..150
+  validates :name, :presence => true, :length => { :within => 3..150 }
+  validates :description, :presence =>true, :length => { :minimum => 4 }
+  validates_presence_of :user
   
   has_one    :category  
   has_many   :comments
