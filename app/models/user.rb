@@ -16,6 +16,7 @@ class User < ActiveRecord::Base
   #                         :message    => 'email must be valid'
   # validates_uniqueness_of :email
   
+  has_one :profile, :dependent => :destroy
   has_many :recipes
   has_many :comments  
   has_many :favorites  
