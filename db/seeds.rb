@@ -18,7 +18,6 @@ categories = [
   {:name => "Vegetariano"},
   {:name => "Lanche"},
   {:name => "Sobremesa"},
-  {:name => "Pão"},
   {:name => "Bolo"},
 ]
 
