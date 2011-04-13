@@ -5,6 +5,12 @@ development:
   database: db/development.sqlite3
   pool: 5
   timeout: 5000
+  #adapter: mysql2
+  #database: naked_cooks_dev
+  #ncoding: utf8
+  #pool: 5
+  #username: root
+  #password:
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -14,9 +20,22 @@ test:
   database: db/test.sqlite3
   pool: 5
   timeout: 5000
+  #adapter: mysql2
+  #database: naked_cooks_test
+  #ncoding: utf8
+  #pool: 5
+  #username: root
+  #password:
 
 production:
   adapter: sqlite3
   database: db/production.sqlite3
   pool: 5
   timeout: 5000
+  #adapter: mysql2
+  #database: naked_cooks_prod
+  #ncoding: utf8
+  #pool: 5
+  #username: root
+  #password:
+
